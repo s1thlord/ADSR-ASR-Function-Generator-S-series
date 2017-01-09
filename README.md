@@ -1,11 +1,10 @@
-# ADSR-ASR-Function-Generator-S-series
 ##S1 Series Envelope generator 
 
-By Chris Holder Any comments or quiries please E:mail the author Chris.holder@mail.com
+By Chris Holder Any comments or quiries please E:mail the author <Chris.holder@mail.com>
 
 ##Introduction 
 
-This project is the second module to be made for the S-series. This module is going to provide envelope generation and will constitute the Dual oscillator with output control making these two units the bare minimum requirement for the system to work. As with the dual oscillator found at this address https://github.com/s1thlord/S-series is also a continuation of the software patches written in pure data emulating three modules of the Buchla 200 series this software can be found at https://github.com/s1thlord/7MU009-Idon .
+This project is the second module to be made for the S-series. This module is going to provide envelope generation and will constitute the Dual oscillator with output control making these two units the bare minimum requirement for the system to work. As with the dual oscillator found at this address <https://github.com/s1thlord/S-series> is also a continuation of the software patches written in pure data emulating three modules of the Buchla 200 series this software can be found at <https://github.com/s1thlord/7MU009-Idon> .
 The original Pure-Data patch was written to be an authentic recreation of 1970’s modular gear however for this project the idea is simply to make an updated version of the unit functionality and to make the most use from the Axoloti core circuit working within the board limitations. However to consider the full desired functionality of the module a look at the current units available was undertaken (a collection of envelope generators is shown in Fig 1).
 
  
@@ -96,17 +95,17 @@ After completing the software functionality for this unit, the interface design 
 The interface design for this unit will use the same approach used by the dual oscillator. Using a left to right approach to the controller layout it is hoped that a user will not only find this an intuitive control method when the module is used in conjunction with other modules from the series but also using the same design concept will give uniformity to the whole series. The design for this project is shown below in Fig **.
 
 
-
-Fig **  ADSR  envelope generator interface layout.
-
-
-Having added new functions to the unit a new layout design was needed to reflect these changes (shown in Fig **)
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170109_120533%20copy.jpg)
+Fig 7  ADSR  envelope generator interface layout.
 
 
+Having added new functions to the unit a new layout design was needed to reflect these changes (shown in Fig 8)
 
 
 
-Fig **   Quad envelope update concept interface layout.  
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170109_120647%20copy.jpg)
+
+Fig 8   Quad envelope update concept interface layout.  
 
 
 
@@ -134,10 +133,14 @@ Having done all of the ‘leg’ work as far as interface controllers is concern
 
 ##Resources
 
+
+
+
+
 ##Links
 
 
-https://github.com/s1thlord/7MU009-Idon
+<https://github.com/s1thlord/7MU009-Idon>
 
-https://github.com/s1thlord/S-series
+<https://github.com/s1thlord/S-series>
 
