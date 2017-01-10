@@ -97,7 +97,7 @@ Fig 6  Axoloti patch for S1 series envelope generator.
 ##Interface design 
 
 After completing the software functionality for this unit, the interface design can be based upon the controllers needed. 
-The interface design for this unit will use the same approach used by the dual oscillator. Using a left to right approach to the controller layout it is hoped that a user will not only find this an intuitive control method when the module is used in conjunction with other modules from the series but also using the same design concept will give uniformity to the whole series. The design for this project is shown below in Fig **.
+The interface design for this unit will use the same approach used by the dual oscillator. Using a left to right approach to the controller layout it is hoped that a user will not only find this an intuitive control method when the module is used in conjunction with other modules from the series but also using the same design concept will give uniformity to the whole series. The design for this project is shown below in Fig 7.
 
 
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170109_120533%20copy.jpg)
