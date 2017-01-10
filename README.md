@@ -167,7 +167,7 @@ With all of the above updates added to the system would make the S1’s units fu
 ##Resources
 
 Buchla Associates 200e Users Guide, 2005.
-Available at <http://www.buchla.com/guides/200e_Users_ Guide.pdf>
+Available at http://www.buchla.com/guides/200e_Users_ Guide.pdf
 
 
 
@@ -178,4 +178,5 @@ Available at <http://www.buchla.com/guides/200e_Users_ Guide.pdf>
 <https://github.com/s1thlord/7MU009-Idon>
 
 <https://github.com/s1thlord/S-series>
+
 
