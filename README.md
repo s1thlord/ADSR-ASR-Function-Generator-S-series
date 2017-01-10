@@ -70,10 +70,15 @@ After completing the first ADSR (attack, decay, sustain, release) patch a way wa
 
 Fig 5 Axoloti abstraction showing trigger able attack, release gates.
 
-A choice was now left to the project weather to have ADSR or ASR as its envelope function. The reason only one of these methods is being chosen is down to a hardware restriction whereby only two audio output channels are available to use on the Axoloti core board hence a dual envelope, rather than a quad output as was done in Pure-Data modelling of the Buchla 200 series envelope (shown in Fig 3). Making the decision to house the ASR function as the main parameter of the unit mainly due to its extra functionality with CV able inputs was a clear choice. However once this choice had been made and the test abstraction put into a working software model, one particular point had to be noted which was the extreme amount of CPU resource still available to use as the overall model was running at about 9% of available load. This lack of CPU utilisation was considered to be a waste of expensive Axoloti resource. 
+A choice was now left to the project weather to have ADSR or ASR as its envelope function. The reason only one of these methods is being chosen is down to a hardware restriction whereby only two audio output channels are available to use on the Axoloti core board hence a dual envelope, rather than a quad output as was done in Pure-Data modelling of the Buchla 200 series envelope (shown in Fig 2). Making the decision to house the ASR function as the main parameter of the unit mainly due to its extra functionality with CV able inputs was a clear choice. However once this choice had been made and the test abstraction put into a working software model, one particular point had to be noted which was the extreme amount of CPU resource still available to use as the overall model was running at about 9% of available load. This lack of CPU utilisation was considered to be a waste of expensive Axoloti resource. 
 To utilise at least some of the CPU availability it was considered to add functions to the module that would be useful to the overall function that of envelope generation. It is also being considered to set functions that will make this unit have more individual character in order to make it stand out when juxtaposed against other manufactured units of the same calibre. To aid in these considerations the author looked back at the Buchla 281 envelope in a hope to inspire some new direction in regards development of the module.
 The first initial update to the unit’s functions has been a debate on weather to attempt some form of quad envelope functionality. Therefore adding the original ADSR test abstraction to the mix. The addition of ADSR in another two channels means that they must share audio inputs with the ASR already in operation however with the implementation of separate triggers for each envelope it should be possible with the correct audio output configuration to make use of all four independently. This function would add 2 extra 6.35mm jack sockets to the interface, which can be added to the layout design already in consideration. Another addition inspired from the Buchla envelope concerning triggers is the ability to fire an output trigger upon the release of the envelope. Which in turn will add another four 6.35mm jack sockets to the interface although adding a small cost to the unit and a small redesign of the interface it is felt that the added operandi more than make up for this small expense. Upon consideration of the audio output of the module, it has been a thought to add cross-faders over each channel to control the envelope outputs. Whereby careful setting of the envelope release times should allow a user to access all four envelopes over both channels.
-One function also under debate for an added upgrade to the project is the addition of an OR logic function over the triggers also inspired by the Buchla unit. This function was never added to the Pure-Data version Due to CPU load being to great when all three modules where run simultaneously from the same laptop. However here we have more than enough CPU power left over to run this added function. 
+One function also under debate for an added upgrade to the project is the addition of an OR logic function over the triggers also inspired by the Buchla unit. 
+To correctly model this function the Buchla users manual was used to understand this function which is described as follows “Generators A and B operate in tandem to provide more complex envelopes.”(Buchla owers manual 2005). This is achieved by the release of gate A triggering the attack of gate B. 
+However this function is a get round due to needing each audio source to have a separate channel for the rest of the Buchla OR functions to operate correctly. 
+The missing function from this module is as stated “As before, a pulse applied to the A input triggers the attack phase of A. When A's attack is completed, B begins its attack while A stays high. When B's attack is complete, A begins its decay while B stays high. And finally, when A's decay is completed, B begins its decay.”(Buchla, 2005).
+The reason for this exclusion is the audio crossfade will mix the final outputs of each gate, which is probably an undesired function as the user has patched separate gates over the source. 
+This function was never added to the Pure-Data version Due to CPU load being to great when all three modules where run simultaneously from the same laptop. However here we have more than enough CPU power left over to run this added function. 
 Having added a mathematical operandi to the module in the shape of the OR function this update Gave the author an inspiration to strike the S1 envelope generator away from the Buchla in terms of design. The thought here was to add more maths capabilities to the module. By changing the release response curve of the each envelope by adding to the linear response with logarithmic and exponential modes activated by the flick of a switch. Another consideration for this project is also based on mathematical functions only this time on the incoming signal to the envelope. Including the function to each of the two channels the ability to subtract and add the signals together. The new abstraction with all the updated functions is shown in fig 6
 
 
@@ -120,19 +125,46 @@ Fig 8   Quad envelope update concept interface layout.
 ##Hardware design
 
 Having done all of the ‘leg’ work as far as interface controllers is concerned in regards the S1 series was all completed in the oscillator build and is talked about in length in the hardware connection chapter. Hence this chapter will just blog the build of the envelope generator.
+The following photographs (Fig 10) will give a pictorial blog of the rest of the hardware construction.
+
+
+![](
+
+Fig 10 shows pictures from blank matrix board to full circuit board inclusion.
+
 
 
 
 ##Final Specifications
+•	Quad ADSR/ AR Envelope generator
+•	Mathematical functions +/- or
+•	Linear, logarithmic and exponential release response
+•	Midi and 10 volt trigger compatible
+•	Dimensions 3U compatible HP 30 
+
 
 
 
 ##Evaluation
+This evaluation has also used the approach taken with the dual oscillator by comparing both the Idon software and hardware equivalents. The original Idon software was loosely based on the Buchla 281 envelope generator being capable of the fundamental operations of the hardware. Comparing the Idon software to the S1 series envelope function generator, all of the primarily functions are available however the S1 series carries extra functionality. These extra functions are due to the software development of the unit discussed in depth in the software concept chapter. 
+When the S1 envelope generator is juxtaposed against other hardware counterparts. These include such modules as the Make Noise Maths and the Buchla 281 envelope generator alongside the Doepfer A104 ADSR. A couple of disadvantages to the S1 become apparent. The first issue is concerned with the release time of the units ADSR and AR envelopes. All of the hardware models stated and also the Idon software share a release time of 10-20 seconds however the maximum possible time for the S1 is 5 seconds due to software object restrictions. This maximum release time could be argued to be more musically useful however if the gates have been set for more complex patterns this extra time would have been a useful feature. 
+The second disadvantage to the S1 envelope is the limitation of two audio input and output channels. Whereas the Buchla and the Make Noise modules have four independent audio channels, as discussed earlier in the software concept chapter this is the reason why the full Buchla OR function could not be added. The purpose of the crossfade function over both audio outputs was the author’s answer to achieving at least some of the functions available to a full quad envelope.
+Despite these two shortcomings of the S1 series envelope, the module itself as introduction level hardware has some powerful functions with which to inflict upon an incoming audio signal. Coupled with the compatibility of the unit with popular modular synthesis 10-volt trigger designs and the capability of MIDI trigger input.    
+
+ Future updates
+A standard update for both units is already in consideration. This first update will see the inclusion of LEDS on both interfaces to aid the user in indicating the different modes available, for example the audio selector switch on the dual oscillator would greatly benefit from this inclusion. The second consideration for both units is to change the prototyping matrix board for PCB board, as this will vastly reduce the amount of wiring at the rear of the unit and will aid in reducing the overall depth of both modules. Another benefit to transferring the discreet components to PCB is the power supply can be refitted for Eurorack Compatibility.  
+Another considered upgrade for the system would be to add a second Axoloti core board to the envelope generator. The main reasoning behind this is to make the unit fully quad capable with four independent audio lines. Also this addition could see changes to the interface with the removal of the crossfade function, as this would no longer be required. The additional Axoloti board would also allow for some of the present functions to be placed over individual channels such as the Linear, Logarithm and exponential modes for example. Another benefit from this inclusion comes from the Make Noise Maths ability to plus and minus the four input audio signals instead of two in the S1’s current build. One other function that would benefit from the second board will be the OR function which could be redesigned in the software environment to adhere to all the functionality of the Buchla 281. 
+The addition of the second Axoloti core board to the envelope generator would have cost implications adding an extra £75 pounds to the build cost however the range of benefits that this would introduce to the module is considered worth the extra cost.
+With all of the above updates added to the system would make the S1’s units fully comparable to other hardware units far above this systems price range.  
+
+
 
 
 
 ##Resources
 
+Buchla Associates 200e Users Guide, 2005.
+Available at <http://www.buchla.com/guides/200e_Users_ Guide.pdf>
 
 
 
