@@ -128,7 +128,10 @@ Having done all of the ‘leg’ work as far as interface controllers is concern
 The following photographs (Fig 10) will give a pictorial blog of the rest of the hardware construction.
 
 
-![](
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20161231_202237.jpg)
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170101_121220.jpg)
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170101_144745.jpg)
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170101_181125.jpg)
 
 Fig 10 shows pictures from blank matrix board to full circuit board inclusion.
 
