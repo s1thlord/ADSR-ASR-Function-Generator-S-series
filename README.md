@@ -132,6 +132,7 @@ The following photographs (Fig 10) will give a pictorial blog of the rest of the
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170101_121220.jpg)
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170101_144745.jpg)
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170101_181125.jpg)
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170111_112606.jpg)
 
 Fig 10 shows pictures from blank matrix board to full circuit board inclusion.
 
@@ -156,6 +157,10 @@ Despite these two shortcomings of the S1 series envelope, the module itself as i
 
 
 
+
+
+
+
 ##Resources
 
 Buchla Associates 200e Users Guide, 2005.
@@ -170,5 +175,4 @@ Available at http://www.buchla.com/guides/200e_Users_ Guide.pdf
 <https://github.com/s1thlord/7MU009-Idon>
 
 <https://github.com/s1thlord/S-series>
-
 
