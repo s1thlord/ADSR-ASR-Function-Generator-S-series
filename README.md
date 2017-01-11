@@ -154,14 +154,6 @@ When the S1 envelope generator is juxtaposed against other hardware counterparts
 The second disadvantage to the S1 envelope is the limitation of two audio input and output channels. Whereas the Buchla and the Make Noise modules have four independent audio channels, as discussed earlier in the software concept chapter this is the reason why the full Buchla OR function could not be added. The purpose of the crossfade function over both audio outputs was the author’s answer to achieving at least some of the functions available to a full quad envelope.
 Despite these two shortcomings of the S1 series envelope, the module itself as introduction level hardware has some powerful functions with which to inflict upon an incoming audio signal. Coupled with the compatibility of the unit with popular modular synthesis 10-volt trigger designs and the capability of MIDI trigger input.    
 
- Future updates
-A standard update for both units is already in consideration. This first update will see the inclusion of LEDS on both interfaces to aid the user in indicating the different modes available, for example the audio selector switch on the dual oscillator would greatly benefit from this inclusion. The second consideration for both units is to change the prototyping matrix board for PCB board, as this will vastly reduce the amount of wiring at the rear of the unit and will aid in reducing the overall depth of both modules. Another benefit to transferring the discreet components to PCB is the power supply can be refitted for Eurorack Compatibility.  
-Another considered upgrade for the system would be to add a second Axoloti core board to the envelope generator. The main reasoning behind this is to make the unit fully quad capable with four independent audio lines. Also this addition could see changes to the interface with the removal of the crossfade function, as this would no longer be required. The additional Axoloti board would also allow for some of the present functions to be placed over individual channels such as the Linear, Logarithm and exponential modes for example. Another benefit from this inclusion comes from the Make Noise Maths ability to plus and minus the four input audio signals instead of two in the S1’s current build. One other function that would benefit from the second board will be the OR function which could be redesigned in the software environment to adhere to all the functionality of the Buchla 281. 
-The addition of the second Axoloti core board to the envelope generator would have cost implications adding an extra £75 pounds to the build cost however the range of benefits that this would introduce to the module is considered worth the extra cost.
-With all of the above updates added to the system would make the S1’s units fully comparable to other hardware units far above this systems price range.  
-
-
-
 
 
 ##Resources
