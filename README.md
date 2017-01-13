@@ -112,7 +112,10 @@ Having added new functions to the unit a new layout design was needed to reflect
 
 Fig 8   Quad envelope update concept interface layout.  
 
+Here will be reflected the interface build in picture format.
 
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170111_213152.jpg)
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170112_153939.jpg)
 
 
 
@@ -133,6 +136,7 @@ The following photographs (Fig 10) will give a pictorial blog of the rest of the
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170101_144745.jpg)
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170101_181125.jpg)
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170111_112606.jpg)
+![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170113_111722.jpg)
 
 Fig 10 shows pictures from blank matrix board to full circuit board inclusion.
 
