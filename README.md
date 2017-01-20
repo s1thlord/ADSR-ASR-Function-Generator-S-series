@@ -137,6 +137,9 @@ The following photographs (Fig 10) will give a pictorial blog of the rest of the
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170101_181125.jpg)
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170111_112606.jpg)
 ![](https://github.com/s1thlord/ADSR-ASR-Function-Generator-S-series/blob/master/IMG_20170113_111722.jpg)
+![](https://github.com/s1thlord/S-series/blob/master/IMG_20170114_113451.jpg)
+![](https://github.com/s1thlord/S-series/blob/master/IMG_20170116_201355.jpg)
+
 
 Fig 10 shows pictures from blank matrix board to full circuit board inclusion.
 
